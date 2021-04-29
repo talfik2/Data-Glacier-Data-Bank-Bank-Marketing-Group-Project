@@ -18,3 +18,6 @@ This repository for Data Bank Bank Marketing Group Project in Data Glacier Data 
 5) Model evaluation
 6) Model deployment
 7) Model governance
+
+**The source of dataset we used in this project: ** https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+
