@@ -8,4 +8,5 @@ In this step,
 * and Transformation is applied by `PowerTransformer`
 * Outliers were also detected & removed.
 
+Step 2 & 3's code can be found here.
 This step is completed by Tevfik SASTIM.
