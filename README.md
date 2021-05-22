@@ -9,3 +9,5 @@ In this step, I deployed our model in step 4 with Flask. During my deployment, I
 * `index.html` points out the html code for the Model Deployment on Flask. It is in the `template` folder.
 * `style.css` points out the CSS code for styling to my deployment. It is in the `static/ css`folder.
 * `entry.png` is the png file that I used as the background image of my API.
+
+This step is completed by Tevfik SASTIM
