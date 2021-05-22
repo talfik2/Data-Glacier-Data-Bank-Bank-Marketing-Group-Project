@@ -6,5 +6,6 @@ In this step,
 * Imbalanced dataset was checked with `imblearn`’s `RandomUndersampler` and  `NearMiss 3` 
 * Data was normalized by `MinMaxScaler`
 * and Transformation is applied by `PowerTransformer`
+* Outliers were also detected & removed.
 
 This step is completed by Tevfik SASTIM.
