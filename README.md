@@ -1,6 +1,5 @@
 # Data-Glacier-Data-Bank-Bank-Marketing-Group-Project
 This repository for Data Bank Bank Marketing Group Project in Data Glacier Data Science Internship.
-This step is completed by Tevfik SASTIM.
 
 **Problem Statement for this project is:**
 
