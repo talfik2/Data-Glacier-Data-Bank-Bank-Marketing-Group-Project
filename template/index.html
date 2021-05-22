@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codeopen.io/frytyler/pen/EGdtg-->
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Marketing</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <table> <! Table oluşturalım>
+       <tr> <! Table row>
+           <th>Please type <br> 0 for Blue-Collar<br>1 for Management <br> 2 for Technician <br> 3 for Admin <br> 4 for Services <br> 5 for Retired <br> 6 for Self-Employed <br> 7 for Entrepreneur <br> 8 for Unemployed <br> 9 for Housemaid <br> 10 for Student  <br> <br> <br> 0 for Single <br> 1 for Married</th> <! Table header>
+       </tr>
+ </table>
+
+
+
+ <div class="login">
+     <h1>Will the customer buy ABC Bank's product?</h1>
+
+     <!--Main Input For Receiving Query to out ML -->
+     <form action="{{ url_for('predict')}}"method="post">
+         <input type="text" name="Job" placeholder ="Job" required="required" />
+         <input type="text" name="Balance" placeholder ="Balance" required="required" />
+         <input type="text" name="Age" placeholder ="Age" required="required" />
+          <input type="text" name="Marital Status" placeholder ="Marital Status" required="required" />
+         
+         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+ 
+ </div>
+
+ </body>
+ </html>
