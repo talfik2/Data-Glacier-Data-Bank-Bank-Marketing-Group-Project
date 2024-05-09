@@ -11,7 +11,7 @@ This repository for Data Bank Bank Marketing Group Project in Data Glacier Data 
 
 **There will be 7 branches for 7 steps. Each branch's name will be the relevant step's name.**
 
-1) Business understanding and scope identification (share project plan and it should align with deliverables mentioned in the dashboard)
+1) Business understanding and scope identification
 2) Data Understanding
 3) EDA and Feature Engineering
 4) Model building and model selection
