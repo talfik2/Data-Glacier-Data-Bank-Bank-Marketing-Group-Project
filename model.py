@@ -7,6 +7,7 @@ Steps Covered in this file
 5. Creating pipeline to implement the model(depending on the model and scenario, pipeline may not be needed for all use cases
 6. Training and testing the model(in this case, pipeline)
 7. Saving the model to Joblib(That's how the joblib works :))
+- Joblib is used for saving and loading ML Models
 8. Calling the model from Joblib
 """
 
