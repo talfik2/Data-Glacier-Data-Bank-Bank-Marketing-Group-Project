@@ -2,21 +2,28 @@ import numpy as np
 from flask import Flask, request, render_template, redirect, url_for
 import joblib
 
-app = Flask(__name__, template_folder = 'template')#main klasörüm bu
+app = Flask(__name__, template_folder = 'template')
+# template_folder = 'template' -> look for html templates in the dir called 'template' 
 model = joblib.load('model.pkl')
 #model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route('/')
+@app.route('/') # when someone goes to the main site, below function(home) will run.  
+# Since function home will return index.html, when someone goes to the main site, they'll see the index.html
+# Nothing but / because below function will call the main page
 def home():
     return render_template('index.html')#İlk göreceğimiz şey index.html olsun
 
-@app.route('/predict',methods=['POST', 'GET'])
+@app.route('/predict',methods=['POST', 'GET']) 
+# run the below function(predict) when the form is submitted(when someone clicked the button)
+# '/predict' execute <domain>/predict
+# www.facebook.com = root, www.facebook.com/login = Log in part of the root
 def predict():
     '''
     For rendering results on HTML
     '''
     int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
+    # request.form.values() = Retrieve the inputs and convert them to intigers for ML model to work on 
+    final_features = [np.array(int_features)] # convert the input values to Np arrays
 
     prediction = model.predict(final_features)
 
