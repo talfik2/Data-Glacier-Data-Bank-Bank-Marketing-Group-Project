@@ -1,3 +1,14 @@
+"""
+Steps Covered in this file
+1. Importing Libraries
+2. Creating df and calling the data
+3. Train Test Split
+# 4. Defining Model(No import is possible for this specific model)
+5. Creating pipeline to implement the model(depending on the model and scenario, pipeline may not be needed for all use cases
+6. Training and testing the model(in this case, pipeline)
+7. Saving the model to Joblib(That's how the joblib works :))
+8. Calling the model from Joblib
+"""
 
 # Save Model Using Pickle
 import joblib
